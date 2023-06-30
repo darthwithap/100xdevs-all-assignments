@@ -13,19 +13,7 @@
 
 ## Routes
 ### Admin Routes:
- - POST /admin/signup
-   Description: Creates a new admin account.
-   Input: { username: 'admin', password: 'pass' }
-   Output: { message: 'Admin created successfully' }
- - POST /admin/login
-   Description: Authenticates an admin. It requires the admin to send username and password in the headers.
-   Input: Headers: { 'username': 'admin', 'password': 'pass' }
-   Output: { message: 'Logged in successfully' }
- - POST /admin/courses
-   Description: Creates a new course.
-   Input: Headers: { 'username': 'admin', 'password': 'pass' }
-   Input: Body: { title: 'course title', description: 'course description', price: 100, imageLink: 'https://linktoimage.com', published: true }
-   Output: { message: 'Course created successfully', courseId: 1 }
+
  - PUT /admin/courses/:courseId
    Description: Edits an existing course. courseId in the URL path should be replaced with the ID of the course to be edited.
    Input: Headers: { 'username': 'admin', 'password': 'pass' }
